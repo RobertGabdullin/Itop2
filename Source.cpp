@@ -54,7 +54,7 @@ vector <string> SplitToSentences(string& s) {
 int main() {
 
 	string s; getline(cin, s);
-	vector <string> sent = SplitToSentences(s);
+	vector <string> sent = SplitToSentences(s), Copy = sent;
 
 	int n; cin >> n;
 	for (int i = 0; i < n; i++) {
@@ -62,7 +62,9 @@ int main() {
 		vector <int> num;
 		Search(sent, s, num);
 		cout << num.size() << endl;
-		for (int j = 0; j < num.size(); j++)
+		for (int j = 0; j < num.size(); j++) {
 			cout << sent[num[j]] << endl;
+			sent[num[j]] = Copy[num[j]];
+		}
 	}
 }
