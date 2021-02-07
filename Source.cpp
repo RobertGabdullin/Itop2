@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-fstream cin("inp.txt");
+fstream cin("in.txt");
 ofstream cout("out.txt");
 
 char UP(char a) {
