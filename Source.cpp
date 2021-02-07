@@ -3,8 +3,8 @@
 #include <vector>
 using namespace std;
 
-fstream cin("input.txt");
-ofstream cout("output.txt");
+fstream cin("inp.txt");
+ofstream cout("out.txt");
 
 char UP(char a) {
 	if ('a' <= a && a <= 'z') a -= 32;
